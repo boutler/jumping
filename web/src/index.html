@@ -6,27 +6,79 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>index</title>
   <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../public/css/index.css">
 </head>
 
 <body>
   <h1 class="header"> Hola header</h1>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        One of three columns
+
+  <main>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-10 col-sm-8 col-md-6">
+
+          <form class="login-form">
+            <div class="form-group">
+              <input type="text" class="form-control" id="userNameLoginForm" placeholder="Nombre de usuario">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="passwordLoginForm" placeholder="Contraseña">
+            </div>
+
+            <div class="form-group">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <button type="submit" class="btn btn-primary col-12">Submit</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="container recuperar-password">
+                <div class="row">
+                  <a class="col-12" data-toggle="collapse" href="#recuperarContraseña" aria-expanded="false" aria-controls="recuperarContraseña">
+                    Recuperar contraseña
+                  </a>
+                  <div class="col-12 collapse" id="recuperarContraseña">
+
+                    <form class="recuperar-pass-form">
+                      <p>por favor introduce tu email o nombre de usuario para restablecer la contraseña</p>
+                      <div class="container">
+                        <div class="row justify-content-between">
+
+                          <div class="form-group col-12 col-sm-10">
+                            <input type="text" class="form-control" id="resetPassword" placeholder="Nombre de usuario o email">
+                          </div>
+                          <button type="submit" class="btn btn-primary col-12 col-sm-2">Submit</button>
+
+                        </div>
+                      </div>
+                    </form>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+        </div>
+        </form>
       </div>
-      <div class="col-sm">
-        One of three columns
-      </div>
-      <div class="col-sm">
-        One of three columns
-      </div>
+
     </div>
-  </div>
+    </div>
+  </main>
 
   <div class="alert alert-primary" role="alert">
     This is a primary alert—check it out!
   </div>
+
+  <!-- <script src="./../public/js/index.js"></script> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/popper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.js"></script>
+
 </body>
 
 </html>
